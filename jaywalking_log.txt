@@ -1,0 +1,738 @@
+Timestamp: 2024-11-14 02:31:18
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:05.091560
+Camera1 BBox: (713, 469, 799, 699)
+Camera2 BBox: (943, 576, 1039, 819)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023113.jpg
+
+Timestamp: 2024-11-14 02:31:18
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:05.380217
+Camera1 BBox: (710, 473, 797, 700)
+Camera2 BBox: (943, 576, 1040, 820)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023118.jpg
+
+Timestamp: 2024-11-14 02:31:18
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.79
+Match Duration: 0:00:05.658961
+Camera1 BBox: (707, 478, 795, 702)
+Camera2 BBox: (944, 577, 1040, 821)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023118.jpg
+
+Timestamp: 2024-11-14 02:31:19
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.80
+Match Duration: 0:00:05.953719
+Camera1 BBox: (705, 480, 795, 707)
+Camera2 BBox: (944, 578, 1041, 821)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023118.jpg
+
+Timestamp: 2024-11-14 02:31:19
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.81
+Match Duration: 0:00:06.248303
+Camera1 BBox: (704, 482, 794, 709)
+Camera2 BBox: (945, 578, 1041, 821)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023119.jpg
+
+Timestamp: 2024-11-14 02:31:19
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.87
+Match Duration: 0:00:06.733428
+Camera1 BBox: (702, 481, 793, 709)
+Camera2 BBox: (946, 576, 1042, 817)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023119.jpg
+
+Timestamp: 2024-11-14 02:31:20
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.87
+Match Duration: 0:00:07.107804
+Camera1 BBox: (699, 480, 791, 707)
+Camera2 BBox: (946, 575, 1043, 816)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023119.jpg
+
+Timestamp: 2024-11-14 02:31:20
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.83
+Match Duration: 0:00:07.623234
+Camera1 BBox: (697, 480, 789, 704)
+Camera2 BBox: (946, 573, 1043, 816)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023120.jpg
+
+Timestamp: 2024-11-14 02:31:21
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.83
+Match Duration: 0:00:08.108647
+Camera1 BBox: (692, 480, 785, 703)
+Camera2 BBox: (946, 572, 1043, 816)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023120.jpg
+
+Timestamp: 2024-11-14 02:31:21
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.82
+Match Duration: 0:00:08.576010
+Camera1 BBox: (685, 480, 779, 707)
+Camera2 BBox: (946, 570, 1044, 818)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023121.jpg
+
+Timestamp: 2024-11-14 02:31:22
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.81
+Match Duration: 0:00:09.086511
+Camera1 BBox: (678, 478, 775, 710)
+Camera2 BBox: (947, 569, 1046, 819)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023121.jpg
+
+Timestamp: 2024-11-14 02:31:22
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.84
+Match Duration: 0:00:09.610313
+Camera1 BBox: (672, 474, 770, 711)
+Camera2 BBox: (947, 568, 1048, 821)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023122.jpg
+
+Timestamp: 2024-11-14 02:31:23
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:10.197199
+Camera1 BBox: (667, 470, 767, 714)
+Camera2 BBox: (949, 567, 1051, 823)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023122.jpg
+
+Timestamp: 2024-11-14 02:31:24
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:10.875319
+Camera1 BBox: (661, 470, 764, 721)
+Camera2 BBox: (949, 566, 1052, 824)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023123.jpg
+
+Timestamp: 2024-11-14 02:31:24
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.74
+Match Duration: 0:00:11.453319
+Camera1 BBox: (656, 472, 760, 727)
+Camera2 BBox: (950, 565, 1053, 825)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023124.jpg
+
+Timestamp: 2024-11-14 02:31:25
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.76
+Match Duration: 0:00:11.946642
+Camera1 BBox: (652, 472, 757, 731)
+Camera2 BBox: (950, 566, 1053, 824)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023124.jpg
+
+Timestamp: 2024-11-14 02:31:25
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.79
+Match Duration: 0:00:12.498165
+Camera1 BBox: (649, 474, 753, 730)
+Camera2 BBox: (951, 567, 1054, 825)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023125.jpg
+
+Timestamp: 2024-11-14 02:31:26
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.83
+Match Duration: 0:00:13.412608
+Camera1 BBox: (647, 476, 750, 729)
+Camera2 BBox: (953, 568, 1055, 825)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023125.jpg
+
+Timestamp: 2024-11-14 02:31:27
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.80
+Match Duration: 0:00:14.362068
+Camera1 BBox: (642, 478, 747, 735)
+Camera2 BBox: (955, 570, 1057, 826)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023126.jpg
+
+Timestamp: 2024-11-14 02:31:28
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:15.157966
+Camera1 BBox: (638, 479, 745, 741)
+Camera2 BBox: (956, 572, 1058, 828)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023127.jpg
+
+Timestamp: 2024-11-14 02:31:29
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.81
+Match Duration: 0:00:15.979296
+Camera1 BBox: (633, 479, 743, 748)
+Camera2 BBox: (957, 573, 1059, 830)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023128.jpg
+
+Timestamp: 2024-11-14 02:31:29
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.80
+Match Duration: 0:00:16.448206
+Camera1 BBox: (627, 480, 738, 751)
+Camera2 BBox: (958, 573, 1061, 831)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023129.jpg
+
+Timestamp: 2024-11-14 02:31:30
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.80
+Match Duration: 0:00:17.093983
+Camera1 BBox: (623, 478, 734, 753)
+Camera2 BBox: (961, 574, 1065, 833)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023129.jpg
+
+Timestamp: 2024-11-14 02:31:30
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.74
+Match Duration: 0:00:17.626479
+Camera1 BBox: (621, 478, 731, 753)
+Camera2 BBox: (964, 574, 1068, 834)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023130.jpg
+
+Timestamp: 2024-11-14 02:31:31
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.82
+Match Duration: 0:00:18.170582
+Camera1 BBox: (619, 476, 728, 754)
+Camera2 BBox: (965, 571, 1070, 835)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023130.jpg
+
+Timestamp: 2024-11-14 02:31:31
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.82
+Match Duration: 0:00:18.687200
+Camera1 BBox: (617, 476, 725, 754)
+Camera2 BBox: (965, 568, 1071, 835)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023131.jpg
+
+Timestamp: 2024-11-14 02:31:32
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.84
+Match Duration: 0:00:19.253340
+Camera1 BBox: (614, 474, 721, 755)
+Camera2 BBox: (964, 566, 1070, 833)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023131.jpg
+
+Timestamp: 2024-11-14 02:31:32
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.77
+Match Duration: 0:00:19.790178
+Camera1 BBox: (613, 474, 718, 753)
+Camera2 BBox: (963, 562, 1069, 832)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023132.jpg
+
+Timestamp: 2024-11-14 02:31:33
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.77
+Match Duration: 0:00:20.341428
+Camera1 BBox: (609, 474, 714, 753)
+Camera2 BBox: (961, 559, 1069, 836)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023132.jpg
+
+Timestamp: 2024-11-14 02:31:34
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.80
+Match Duration: 0:00:20.904398
+Camera1 BBox: (606, 474, 710, 754)
+Camera2 BBox: (960, 557, 1069, 837)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023133.jpg
+
+Timestamp: 2024-11-14 02:31:34
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.81
+Match Duration: 0:00:21.362014
+Camera1 BBox: (602, 474, 706, 757)
+Camera2 BBox: (960, 555, 1069, 838)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023134.jpg
+
+Timestamp: 2024-11-14 02:31:35
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.82
+Match Duration: 0:00:21.933133
+Camera1 BBox: (594, 474, 700, 762)
+Camera2 BBox: (961, 554, 1071, 841)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023134.jpg
+
+Timestamp: 2024-11-14 02:31:35
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.81
+Match Duration: 0:00:22.452584
+Camera1 BBox: (582, 476, 690, 764)
+Camera2 BBox: (962, 556, 1071, 840)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023135.jpg
+
+Timestamp: 2024-11-14 02:31:36
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.81
+Match Duration: 0:00:23.014070
+Camera1 BBox: (569, 472, 684, 766)
+Camera2 BBox: (963, 558, 1071, 840)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023135.jpg
+
+Timestamp: 2024-11-14 02:31:36
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:23.613989
+Camera1 BBox: (559, 470, 680, 772)
+Camera2 BBox: (965, 559, 1071, 838)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023136.jpg
+
+Timestamp: 2024-11-14 02:31:37
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:24.205939
+Camera1 BBox: (554, 472, 678, 778)
+Camera2 BBox: (965, 561, 1072, 840)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023136.jpg
+
+Timestamp: 2024-11-14 02:31:38
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:24.814853
+Camera1 BBox: (550, 477, 677, 785)
+Camera2 BBox: (965, 563, 1073, 844)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023137.jpg
+
+Timestamp: 2024-11-14 02:31:38
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.77
+Match Duration: 0:00:25.366114
+Camera1 BBox: (546, 479, 677, 792)
+Camera2 BBox: (966, 566, 1074, 847)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023138.jpg
+
+Timestamp: 2024-11-14 02:31:39
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.82
+Match Duration: 0:00:25.882915
+Camera1 BBox: (545, 479, 679, 796)
+Camera2 BBox: (966, 567, 1074, 851)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023138.jpg
+
+Timestamp: 2024-11-14 02:31:39
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.82
+Match Duration: 0:00:26.426197
+Camera1 BBox: (545, 479, 679, 798)
+Camera2 BBox: (966, 567, 1075, 853)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023139.jpg
+
+Timestamp: 2024-11-14 02:31:40
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.80
+Match Duration: 0:00:26.990219
+Camera1 BBox: (542, 478, 677, 797)
+Camera2 BBox: (967, 567, 1076, 856)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023139.jpg
+
+Timestamp: 2024-11-14 02:31:40
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.77
+Match Duration: 0:00:27.463387
+Camera1 BBox: (536, 476, 671, 798)
+Camera2 BBox: (967, 567, 1077, 858)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023140.jpg
+
+Timestamp: 2024-11-14 02:31:41
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:27.951630
+Camera1 BBox: (528, 475, 664, 795)
+Camera2 BBox: (968, 565, 1079, 858)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023140.jpg
+
+Timestamp: 2024-11-14 02:31:41
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.77
+Match Duration: 0:00:28.542217
+Camera1 BBox: (518, 473, 652, 793)
+Camera2 BBox: (970, 564, 1081, 858)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023141.jpg
+
+Timestamp: 2024-11-14 02:31:42
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.77
+Match Duration: 0:00:29.116222
+Camera1 BBox: (507, 471, 640, 791)
+Camera2 BBox: (973, 562, 1084, 859)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023141.jpg
+
+Timestamp: 2024-11-14 02:31:42
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.81
+Match Duration: 0:00:29.589713
+Camera1 BBox: (497, 462, 635, 796)
+Camera2 BBox: (974, 561, 1086, 860)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023142.jpg
+
+Timestamp: 2024-11-14 02:31:43
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.75
+Match Duration: 0:00:30.293846
+Camera1 BBox: (488, 457, 630, 804)
+Camera2 BBox: (974, 561, 1087, 862)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023142.jpg
+
+Timestamp: 2024-11-14 02:31:44
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.77
+Match Duration: 0:00:30.901661
+Camera1 BBox: (477, 456, 624, 819)
+Camera2 BBox: (975, 562, 1090, 865)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023143.jpg
+
+Timestamp: 2024-11-14 02:31:44
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.75
+Match Duration: 0:00:31.399989
+Camera1 BBox: (470, 467, 616, 827)
+Camera2 BBox: (976, 564, 1091, 869)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023144.jpg
+
+Timestamp: 2024-11-14 02:31:45
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.75
+Match Duration: 0:00:32.011951
+Camera1 BBox: (463, 471, 610, 833)
+Camera2 BBox: (977, 566, 1093, 873)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023144.jpg
+
+Timestamp: 2024-11-14 02:31:45
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.73
+Match Duration: 0:00:32.518723
+Camera1 BBox: (458, 474, 603, 831)
+Camera2 BBox: (979, 568, 1095, 875)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023145.jpg
+
+Timestamp: 2024-11-14 02:31:46
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.71
+Match Duration: 0:00:33.077820
+Camera1 BBox: (449, 475, 598, 841)
+Camera2 BBox: (979, 570, 1095, 876)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023145.jpg
+
+Timestamp: 2024-11-14 02:31:47
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.74
+Match Duration: 0:00:33.825940
+Camera1 BBox: (444, 483, 594, 851)
+Camera2 BBox: (980, 573, 1096, 881)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023146.jpg
+
+Timestamp: 2024-11-14 02:31:47
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.76
+Match Duration: 0:00:34.407680
+Camera1 BBox: (440, 486, 591, 857)
+Camera2 BBox: (980, 575, 1097, 885)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023147.jpg
+
+Timestamp: 2024-11-14 02:31:48
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.79
+Match Duration: 0:00:34.945476
+Camera1 BBox: (435, 486, 590, 863)
+Camera2 BBox: (979, 573, 1098, 888)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023147.jpg
+
+Timestamp: 2024-11-14 02:31:48
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:35.505327
+Camera1 BBox: (429, 486, 586, 866)
+Camera2 BBox: (981, 572, 1101, 891)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023148.jpg
+
+Timestamp: 2024-11-14 02:31:49
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.76
+Match Duration: 0:00:36.295849
+Camera1 BBox: (422, 484, 580, 867)
+Camera2 BBox: (979, 573, 1099, 894)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023148.jpg
+
+Timestamp: 2024-11-14 02:31:49
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.75
+Match Duration: 0:00:36.790586
+Camera1 BBox: (416, 485, 571, 866)
+Camera2 BBox: (980, 575, 1099, 896)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023149.jpg
+
+Timestamp: 2024-11-14 02:31:50
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.76
+Match Duration: 0:00:37.349129
+Camera1 BBox: (409, 486, 562, 867)
+Camera2 BBox: (982, 575, 1101, 897)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023149.jpg
+
+Timestamp: 2024-11-14 02:31:52
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.74
+Match Duration: 0:00:38.898995
+Camera1 BBox: (403, 486, 552, 867)
+Camera2 BBox: (983, 572, 1103, 897)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023150.jpg
+
+Timestamp: 2024-11-14 02:31:53
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.74
+Match Duration: 0:00:39.862597
+Camera1 BBox: (395, 481, 543, 867)
+Camera2 BBox: (984, 571, 1104, 897)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023152.jpg
+
+Timestamp: 2024-11-14 02:31:53
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.78
+Match Duration: 0:00:40.442726
+Camera1 BBox: (385, 479, 533, 866)
+Camera2 BBox: (985, 569, 1105, 898)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023153.jpg
+
+Timestamp: 2024-11-14 02:31:54
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.74
+Match Duration: 0:00:41.013411
+Camera1 BBox: (371, 479, 520, 866)
+Camera2 BBox: (985, 569, 1107, 898)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023153.jpg
+
+Timestamp: 2024-11-14 02:31:54
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.72
+Match Duration: 0:00:41.519896
+Camera1 BBox: (363, 481, 513, 868)
+Camera2 BBox: (985, 568, 1106, 899)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023154.jpg
+
+Timestamp: 2024-11-14 02:31:55
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.72
+Match Duration: 0:00:42.078686
+Camera1 BBox: (353, 482, 506, 877)
+Camera2 BBox: (985, 569, 1106, 901)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023154.jpg
+
+Timestamp: 2024-11-14 02:31:55
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.73
+Match Duration: 0:00:42.635306
+Camera1 BBox: (334, 480, 496, 890)
+Camera2 BBox: (983, 569, 1106, 902)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023155.jpg
+
+Timestamp: 2024-11-14 02:31:56
+Camera1 ID: 1, Camera2 ID: 1
+Similarity: 0.72
+Match Duration: 0:00:43.251674
+Camera1 BBox: (313, 483, 483, 897)
+Camera2 BBox: (983, 570, 1105, 902)
+Camera1 Image: matched_images/person_1_1_20241114_023113.jpg
+Camera2 Image: matched_images/person_2_1_20241114_023155.jpg
+
+Timestamp: 2024-11-14 02:32:41
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 0.78
+Match Duration: 0:00:06.192490
+Camera1 BBox: (283, 493, 413, 683)
+Camera2 BBox: (519, 623, 645, 847)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023234.jpg
+
+Timestamp: 2024-11-14 02:32:42
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 0.71
+Match Duration: 0:00:07.483525
+Camera1 BBox: (224, 483, 358, 679)
+Camera2 BBox: (419, 627, 547, 850)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023241.jpg
+
+Timestamp: 2024-11-14 02:32:43
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 0.73
+Match Duration: 0:00:08.165563
+Camera1 BBox: (204, 487, 333, 676)
+Camera2 BBox: (366, 632, 492, 847)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023242.jpg
+
+Timestamp: 2024-11-14 02:32:43
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 0.78
+Match Duration: 0:00:08.908472
+Camera1 BBox: (183, 494, 305, 670)
+Camera2 BBox: (317, 633, 444, 849)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023243.jpg
+
+Timestamp: 2024-11-14 02:32:44
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 0.77
+Match Duration: 0:00:09.870624
+Camera1 BBox: (162, 495, 284, 671)
+Camera2 BBox: (266, 639, 391, 850)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023243.jpg
+
+Timestamp: 2024-11-14 02:32:45
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 0.82
+Match Duration: 0:00:10.654130
+Camera1 BBox: (140, 493, 264, 670)
+Camera2 BBox: (212, 644, 341, 860)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023244.jpg
+
+Timestamp: 2024-11-14 02:32:46
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 0.81
+Match Duration: 0:00:11.129908
+Camera1 BBox: (119, 491, 238, 662)
+Camera2 BBox: (160, 648, 292, 866)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023245.jpg
+
+Timestamp: 2024-11-14 02:32:46
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 0.79
+Match Duration: 0:00:11.659210
+Camera1 BBox: (98, 492, 218, 665)
+Camera2 BBox: (110, 648, 246, 871)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023246.jpg
+
+Timestamp: 2024-11-14 02:32:46
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 0.80
+Match Duration: 0:00:11.894607
+Camera1 BBox: (77, 493, 194, 661)
+Camera2 BBox: (57, 649, 196, 876)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023246.jpg
+
+Timestamp: 2024-11-14 02:32:47
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 0.78
+Match Duration: 0:00:12.117804
+Camera1 BBox: (55, 492, 175, 665)
+Camera2 BBox: (6, 651, 146, 880)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023246.jpg
+
+Timestamp: 2024-11-14 02:32:47
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 1.00
+Match Duration: 0:00:12.338543
+Camera1 BBox: (37, 494, 152, 659)
+Camera2 BBox: (-25, 653, 108, 876)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023247.jpg
+
+Timestamp: 2024-11-14 02:32:47
+Camera1 ID: 3, Camera2 ID: 4
+Similarity: 1.00
+Match Duration: 0:00:12.828937
+Camera1 BBox: (21, 500, 132, 657)
+Camera2 BBox: (-73, 655, 60, 879)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023247.jpg
+
+Timestamp: 2024-11-14 02:32:48
+Camera1 ID: 3, Camera2 ID: 1
+Similarity: 1.00
+Match Duration: 0:00:12.828937
+Camera1 BBox: (-8, 494, 97, 643)
+Camera2 BBox: (811, 538, 1039, 1075)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023247.jpg
+
+Timestamp: 2024-11-14 02:32:49
+Camera1 ID: 3, Camera2 ID: 1
+Similarity: 1.00
+Match Duration: 0:00:12.828937
+Camera1 BBox: (-16, 487, 85, 635)
+Camera2 BBox: (801, 533, 1032, 1076)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023247.jpg
+
+Timestamp: 2024-11-14 02:32:49
+Camera1 ID: 3, Camera2 ID: 1
+Similarity: 1.00
+Match Duration: 0:00:12.828937
+Camera1 BBox: (-37, 486, 62, 631)
+Camera2 BBox: (792, 529, 1027, 1076)
+Camera1 Image: matched_images/person_1_3_20241114_023234.jpg
+Camera2 Image: matched_images/person_2_4_20241114_023247.jpg
+
