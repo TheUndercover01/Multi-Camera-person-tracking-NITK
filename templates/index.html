@@ -1,15 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surveillance Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8 text-gray-800">Surveillance Dashboard</h1>
+        
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-gray-500 text-sm font-medium">Total Detections</h3>
+                <p class="text-2xl font-bold text-gray-800" id="total-detections">0</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-gray-500 text-sm font-medium">Humans Detected</h3>
+                <p class="text-2xl font-bold text-gray-800" id="human-detections">0</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-gray-500 text-sm font-medium">Jaywalking Incidents</h3>
+                <p class="text-2xl font-bold text-gray-800" id="jaywalking-count">0</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-gray-500 text-sm font-medium">Avg Certainty</h3>
+                <p class="text-2xl font-bold text-gray-800" id="avg-certainty">0%</p>
+            </div>
+        </div>
 
-
-  <body>
-    <h1>Live streaming</h1>
-    <div>
-
-        <img src="{{ url_for('video') }}" width="50%"/>
+        <!-- Logs Table -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <h2 class="text-lg font-medium text-gray-800">Recent Detections</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Timestamp</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Entity</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Certainty</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200" id="logs-tbody">
+                        <!-- Logs will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-            
-    </body>
 
+    <script>
+        function updateDashboard() {
+            $.get('/get_logs', function(logs) {
+                // Update table
+                let tbody = $('#logs-tbody');
+                tbody.empty();
+                
+                let totalDetections = logs.length;
+                let humanDetections = 0;
+                let jaywalkingCount = 0;
+                let totalCertainty = 0;
 
+                logs.forEach(log => {
+                    let row = $('<tr>').addClass('hover:bg-gray-50');
+                    
+                    row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm text-gray-500')
+                        .text(new Date(log.timestamp).toLocaleString()));
+                    
+                    row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900')
+                        .text(log.entity));
+                    
+                    row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm text-gray-500')
+                        .text((log.certainty * 100).toFixed(1) + '%'));
+                    
+                    let statusClass = log.is_jaywalking ? 'text-red-800 bg-red-100' : 'text-green-800 bg-green-100';
+                    let statusText = log.is_jaywalking ? 'Jaywalking' : 'Normal';
+                    
+                    row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm')
+                        .append($('<span>').addClass(`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${statusClass}`)
+                            .text(statusText)));
+                    
+                    tbody.append(row);
+
+                    // Update stats
+                    if (log.entity === 'human') humanDetections++;
+                    if (log.is_jaywalking) jaywalkingCount++;
+                    totalCertainty += log.certainty;
+                });
+
+                // Update stats cards
+                $('#total-detections').text(totalDetections);
+                $('#human-detections').text(humanDetections);
+                $('#jaywalking-count').text(jaywalkingCount);
+                $('#avg-certainty').text((totalCertainty / totalDetections * 100).toFixed(1) + '%');
+            });
+        }
+
+        // Update every 3 seconds
+        updateDashboard();
+        setInterval(updateDashboard, 3000);
+    </script>
+</body>
 </html>

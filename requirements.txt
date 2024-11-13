@@ -1,9 +1,9 @@
 opencv-python-headless
 numpy
-torch
-torchvision
-ultralytics
+# torch
+# torchvision
+# ultralytics
 flask
 pillow
-torchreid
+# torchreid
 # SpeedEye @ git+https://github.com/path/to/SpeedEye.git
