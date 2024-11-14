@@ -13,21 +13,21 @@
         
         <!-- Stats Cards -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-gray-500 text-sm font-medium">Total Detections</h3>
-                <p class="text-2xl font-bold text-gray-800" id="total-detections">0</p>
+            <div class="bg-blue-500 text-white rounded-lg shadow p-6">
+                <h3 class="text-blue-200 text-sm font-medium">Total Detections</h3>
+                <p class="text-2xl font-bold" id="total-detections">0</p>
             </div>
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-gray-500 text-sm font-medium">Humans Detected</h3>
-                <p class="text-2xl font-bold text-gray-800" id="human-detections">0</p>
+            <div class="bg-green-500 text-white rounded-lg shadow p-6">
+                <h3 class="text-green-200 text-sm font-medium">Humans Detected</h3>
+                <p class="text-2xl font-bold" id="human-detections">1</p>
             </div>
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-gray-500 text-sm font-medium">Jaywalking Incidents</h3>
-                <p class="text-2xl font-bold text-gray-800" id="jaywalking-count">0</p>
+            <div class="bg-yellow-500 text-white rounded-lg shadow p-6">
+                <h3 class="text-yellow-200 text-sm font-medium">Jaywalking Incidents</h3>
+                <p class="text-2xl font-bold" id="jaywalking-count">1</p>
             </div>
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-gray-500 text-sm font-medium">Avg Certainty</h3>
-                <p class="text-2xl font-bold text-gray-800" id="avg-certainty">0%</p>
+            <div class="bg-red-500 text-white rounded-lg shadow p-6">
+                <h3 class="text-red-200 text-sm font-medium">Average Certainty</h3>
+                <p class="text-2xl font-bold" id="avg-certainty">0%</p>
             </div>
         </div>
 
@@ -42,8 +42,9 @@
                         <tr>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Timestamp</th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Entity</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Certainty</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Jaywalking Confidence</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Is Jaywalking</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name Confidence</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200" id="logs-tbody">
@@ -62,9 +63,9 @@
                 tbody.empty();
                 
                 let totalDetections = logs.length;
-                let humanDetections = 0;
-                let jaywalkingCount = 0;
-                let totalCertainty = 0;
+                let jaywalkingLogs = logs.filter(log => log.is_jaywalking);
+                let recentJaywalkingLogs = jaywalkingLogs.slice(-20);
+                let avgCertainty = recentJaywalkingLogs.reduce((sum, log) => sum + log.jay_walking_conf, 0) / recentJaywalkingLogs.length;
 
                 logs.forEach(log => {
                     let row = $('<tr>').addClass('hover:bg-gray-50');
@@ -72,32 +73,28 @@
                     row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm text-gray-500')
                         .text(new Date(log.timestamp).toLocaleString()));
                     
-                    row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900')
-                        .text(log.entity));
+                    let entityClass = log.entity === 'Unknown' ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800';
+                    row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm font-medium')
+                        .append($('<span>').addClass('px-2 inline-flex text-xs leading-5 font-semibold rounded-full ' + entityClass)
+                        .text(log.entity)));
                     
                     row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm text-gray-500')
-                        .text((log.certainty * 100).toFixed(1) + '%'));
+                        .text((log.jay_walking_conf * 100).toFixed(1) + '%'));
                     
-                    let statusClass = log.is_jaywalking ? 'text-red-800 bg-red-100' : 'text-green-800 bg-green-100';
-                    let statusText = log.is_jaywalking ? 'Jaywalking' : 'Normal';
+                    let jaywalkingClass = log.is_jaywalking ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800';
+                    row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm font-medium')
+                        .append($('<span>').addClass('px-2 inline-flex text-xs leading-5 font-semibold rounded-full ' + jaywalkingClass)
+                        .text(log.is_jaywalking ? 'Yes' : 'No')));
                     
-                    row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm')
-                        .append($('<span>').addClass(`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${statusClass}`)
-                            .text(statusText)));
+                    row.append($('<td>').addClass('px-6 py-4 whitespace-nowrap text-sm text-gray-500')
+                        .text((log.Confidence_name * 100).toFixed(1) + '%'));
                     
                     tbody.append(row);
-
-                    // Update stats
-                    if (log.entity === 'human') humanDetections++;
-                    if (log.is_jaywalking) jaywalkingCount++;
-                    totalCertainty += log.certainty;
                 });
 
                 // Update stats cards
                 $('#total-detections').text(totalDetections);
-                $('#human-detections').text(humanDetections);
-                $('#jaywalking-count').text(jaywalkingCount);
-                $('#avg-certainty').text((totalCertainty / totalDetections * 100).toFixed(1) + '%');
+                $('#avg-certainty').text(isNaN(avgCertainty) ? '0%' : (avgCertainty * 100).toFixed(1) + '%');
             });
         }
 
