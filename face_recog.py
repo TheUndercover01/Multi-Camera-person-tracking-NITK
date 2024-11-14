@@ -9,29 +9,12 @@ from facenet_pytorch import MTCNN
 from tqdm import tqdm
 import random
 from datetime import datetime
-
-# Add this at the top of face_recog.py
-surveillance_logs = []
-
-# Modify the generate_log method to save logs to the global list
-def generate_log(self, entity, timestamp, jay_walking_conf, Conf_in_name):
-    """Generates a log for a matched or unmatched entity."""
-    is_jaywalking = True if entity != 'Unknown' else False
-
-    log = {
-        "timestamp": timestamp,
-        "entity": entity,
-        "jay_walking_conf": jay_walking_conf,
-        "is_jaywalking": is_jaywalking,
-        "Confidence_name": Conf_in_name
-    }
-
-    # Save log to the global list
-    surveillance_logs.append(log)
-    if len(surveillance_logs) > 100:
-        surveillance_logs.pop(0)
-
-    return log
+import json
+LOG_FILE_PATH = './logs/surveillance_logs.json'
+def save_log_to_file(log):
+    """Save a log to the log file."""
+    with open(LOG_FILE_PATH, 'a') as log_file:
+        log_file.write(json.dumps(log) + '\n')
 
 class FaceRecognitionSystem:
     
@@ -164,6 +147,8 @@ class FaceRecognitionSystem:
                     result['confidence']
                 )
                 print(f"Generated Log: {dummy_log}")
+
+                save_log_to_file(dummy_log);
 
                 results.append({
                     'image_path': image_path,
