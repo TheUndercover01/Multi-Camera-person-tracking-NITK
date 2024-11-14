@@ -10,8 +10,32 @@ from tqdm import tqdm
 import random
 from datetime import datetime
 
+# Add this at the top of face_recog.py
+surveillance_logs = []
+
+# Modify the generate_log method to save logs to the global list
+def generate_log(self, entity, timestamp, jay_walking_conf, Conf_in_name):
+    """Generates a log for a matched or unmatched entity."""
+    is_jaywalking = True if entity != 'Unknown' else False
+
+    log = {
+        "timestamp": timestamp,
+        "entity": entity,
+        "jay_walking_conf": jay_walking_conf,
+        "is_jaywalking": is_jaywalking,
+        "Confidence_name": Conf_in_name
+    }
+
+    # Save log to the global list
+    surveillance_logs.append(log)
+    if len(surveillance_logs) > 100:
+        surveillance_logs.pop(0)
+
+    return log
 
 class FaceRecognitionSystem:
+    
+
     def __init__(self, embeddings_path='reference_embeddings.npy', device=None):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') if device is None else device
         self.embeddings_path = embeddings_path
