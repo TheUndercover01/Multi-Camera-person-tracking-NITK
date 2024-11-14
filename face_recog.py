@@ -53,7 +53,7 @@ class FaceRecognitionSystem:
     def extract_features(self, face_tensor):
         """Extracts features from the face tensor using ResNet50"""
         with torch.no_grad():
-            face_tensor = face_tensor.to(self.device)
+            face_tensor = face_tensor
             features = self.feature_extractor(face_tensor.unsqueeze(0))
             features = F.normalize(features, p=2, dim=1)
             return features.cpu().numpy().flatten()
@@ -65,14 +65,17 @@ class FaceRecognitionSystem:
 
         face_tensor = self.extract_face(image_path)
         if face_tensor is None:
-            return {'name': 'Ayush', 'confidence': 0.0, 'match': False, 'error': 'No face detected'}
+            return {'name': 'Unknown', 'confidence': 0.0, 'match': False, 'error': 'No face detected'}
 
         face_features = self.extract_features(face_tensor)
         similarities = [np.dot(face_features, ref) for ref in self.reference_embeddings]
-        confidence = max(similarities)
+        confidence = max(similarities) if similarities else 0.0
 
-        # Display name "Ayush" with confidence regardless of match threshold
-        return {'name': 'Ayush', 'match': confidence >= threshold, 'confidence': confidence}
+        # Return "Unknown" if confidence is below threshold
+        if confidence >= threshold:
+            return {'name': 'Ayush', 'match': True, 'confidence': confidence}
+        else:
+            return {'name': 'Unknown', 'match': False, 'confidence': confidence}
 
     def parse_log_file(self, log_path):
         """Parses the log file to extract paths of Camera2 images and their timestamps"""
@@ -88,25 +91,22 @@ class FaceRecognitionSystem:
                 entry["timestamp"] = line.split(": ", 1)[1].strip()
             elif line.startswith("Similarity:"):
                 entry["Similarity"] = line.split(": ", 1)[1].strip()
-                # Ensure both Camera2 image path and timestamp are found
                 if "camera2_image" in entry and "timestamp" in entry and "Similarity" in entry:
                     camera2_images_with_timestamp.append(entry)
-                    entry = {}  # Reset entry for the next log
+                    entry = {}
 
         return camera2_images_with_timestamp
 
     def generate_log(self, entity, timestamp, jay_walking_conf, Conf_in_name):
-        """Generates a dummy log for a matched entity."""
-        is_jaywalking = True
+        """Generates a log for a matched or unmatched entity."""
+        is_jaywalking = True if entity != 'Unknown' else False
 
         return {
             "timestamp": timestamp,
-            "entity": entity,  # Here, entity will be the matched person
-            "jay_walking_conf": jay_walking_conf,  # Confidence related to jaywalking
+            "entity": entity,
+            "jay_walking_conf": jay_walking_conf,
             "is_jaywalking": is_jaywalking,
             "Confidence_name": Conf_in_name
-
-
         }
 
     def recognize_images_from_log(self, log_path):
@@ -123,42 +123,37 @@ class FaceRecognitionSystem:
             if os.path.exists(image_path):
                 result = self.predict(image_path)
 
+                print(f"\nProcessing image: {image_path}")
+                print(f"Timestamp: {timestamp}")
+                print(f"Confidence: {result['confidence']:.2%}")
+
                 if result['match']:
-                    # Stop recognition once a match is found
-                    print(f"\nMatch found for {image_path}!")
-                    print(f"Timestamp: {timestamp}")
-                    print(f"Confidence: {result['confidence']:.2%}")
-
-
-                    # Generate and print the dummy log with updated names
-                    dummy_log = self.generate_log(result['name'], timestamp, jay_walking_conf, result['confidence'] )
-                    print(f"Generated Dummy Log: {dummy_log}")
-
-                    # Add the result and stop processing
-                    results.append({
-                        'image_path': image_path,
-                        'name': result['name'],
-                        'match': result['match'],
-                        'confidence': result['confidence'],
-                        'timestamp': timestamp
-                    })
-                    break  # Stop processing after the first match
-
+                    print(f"Match found! Entity: {result['name']}")
                 else:
-                    # No match found for this image
-                    print(f"\nNo match for {image_path}")
-                    results.append({
-                        'image_path': image_path,
-                        'name': result['name'],
-                        'match': result['match'],
-                        'confidence': result['confidence'],
-                        'timestamp': timestamp
-                    })
+                    print(f"No match found. Entity: Unknown")
+
+                # Generate log regardless of match status
+                dummy_log = self.generate_log(
+                    result['name'],
+                    timestamp,
+                    jay_walking_conf,
+                    result['confidence']
+                )
+                print(f"Generated Log: {dummy_log}")
+
+                results.append({
+                    'image_path': image_path,
+                    'name': result['name'],
+                    'match': result['match'],
+                    'confidence': result['confidence'],
+                    'timestamp': timestamp
+                })
+
             else:
                 print(f"Image not found: {image_path}")
                 results.append({
                     'image_path': image_path,
-                    'name': 'Ayush',
+                    'name': 'Unknown',
                     'match': False,
                     'confidence': 0.0,
                     'error': 'Image not found',
