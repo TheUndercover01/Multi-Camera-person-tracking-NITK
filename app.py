@@ -1,12 +1,9 @@
 from flask import Flask, render_template, jsonify
 import threading
-from face_recog import FaceRecognitionSystem, surveillance_logs
+from face_recog import LOG_FILE_PATH
 import time 
+import json
 app = Flask(__name__)
-
-# Initialize the face recognition system
-face_recognition_system = FaceRecognitionSystem()
-
 
 @app.route('/')
 def index():
@@ -14,7 +11,13 @@ def index():
 
 @app.route('/get_logs')
 def get_logs():
-    return jsonify(surveillance_logs[-20:])  # Return last 20 logs
+    logs = []
+    try:
+        with open(LOG_FILE_PATH, 'r') as log_file:
+            logs = [json.loads(line) for line in log_file.readlines()]
+    except FileNotFoundError:
+        pass
+    return jsonify(logs[-10:])
 
 if __name__ == '__main__':
     app.run(debug=True)
