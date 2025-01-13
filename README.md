@@ -1,5 +1,8 @@
 # Multi-Camera Person Tracking and Recognition System for NITK
 
+![image](https://github.com/user-attachments/assets/93e63adf-edc4-4174-9765-c0a0f41764e6)
+
+
 A sophisticated surveillance system that utilizes multiple cameras to track and recognize individuals, with a specific focus on detecting jaywalking incidents within the NITK campus.
 
 ## Features
